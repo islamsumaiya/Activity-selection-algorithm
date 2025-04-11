@@ -31,7 +31,7 @@ int main()
     sort (activites,activites+n,comp);
     cout<<"{" <<activites[0].star <<"," <<activites[0].endd <<"}"<<endl;
     int currentEnd=activites[0].endd;
-    for(int i=0; i<n; i++)
+    for(int i=1; i<n; i++)
     {
         if(currentEnd <=activites[i].star)
         {
